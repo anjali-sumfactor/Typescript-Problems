@@ -1,6 +1,6 @@
 //1.Method:-
 export function reverseAString(string: string): string {
-    let revStr = "";
+    let revStr:string = "";
     for (let i = string.length; i >= 0; i--) {
         revStr += string[i];
     }

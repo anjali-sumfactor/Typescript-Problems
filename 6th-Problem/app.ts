@@ -1,7 +1,7 @@
 export function factorial(num: number): number {
-    let facto = 1;
+    let facto: number = 1;
     for (let i = num; i > 0; i--) {
-        facto = facto * i;
+        facto *= i;
     }
     return facto;
 }

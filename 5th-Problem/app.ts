@@ -1,4 +1,8 @@
 export function productOfTwoNum(num1: number, num2: number): number {
-    return num1 * num2;
+    let n= num1;
+    for (let i = 0; i < num2-1; i++) {
+        n+= num1;
+    }
+    return n;
 }
 console.log(productOfTwoNum(20, 30));

@@ -1,6 +1,6 @@
 //1.Method:-
 export function countStringChar(string: string): number {
-    let count = 0;
+    let count:number = 0;
     for (let i = 0; i < string.length; i++) {
         count += 1;
     }
