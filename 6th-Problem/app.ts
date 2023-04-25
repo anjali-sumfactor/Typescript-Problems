@@ -6,3 +6,11 @@ export function factorial(num: number): number {
     return facto;
 }
 console.log(factorial(5));
+
+function fact(n: number): number {
+    if (n === 0) {
+        return 1;
+    }
+    return n * fact(n - 1);
+}
+console.log(fact(6));
