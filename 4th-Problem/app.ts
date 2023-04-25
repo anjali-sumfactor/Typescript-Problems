@@ -1,15 +1,12 @@
-//1.Method:-
-export function countStringChar(string: string): number {
-    let count:number = 0;
-    for (let i = 0; i < string.length; i++) {
-        count += 1;
+function countChars(str: string): { [char: string]: number } {
+    const charCounts = {};
+    for (const char of str) {
+        if (charCounts[char]) {
+            charCounts[char]++;
+        } else {
+            charCounts[char] = 1;
+        }
     }
-    return count;
+    return charCounts;
 }
-console.log(countStringChar("hello world"));
-
-//2.Method:-
-function countStrChar(string: string): number {
-    return string.length;
-}
-console.log(countStrChar("hello world"));
+console.log(countChars("hello"));

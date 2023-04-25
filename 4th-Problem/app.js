@@ -1,18 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.countStringChar = void 0;
-//1.Method:-
-function countStringChar(string) {
-    var count = 0;
-    for (var i = 0; i < string.length; i++) {
-        count += 1;
+function countChars(str) {
+    var charCounts = {};
+    for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
+        var char = str_1[_i];
+        if (charCounts[char]) {
+            charCounts[char]++;
+        }
+        else {
+            charCounts[char] = 1;
+        }
     }
-    return count;
+    return charCounts;
 }
-exports.countStringChar = countStringChar;
-console.log(countStringChar("hello world"));
-//2.Method:-
-function countStrChar(string) {
-    return string.length;
-}
-console.log(countStrChar("hello world"));
+console.log(countChars("hello"));
