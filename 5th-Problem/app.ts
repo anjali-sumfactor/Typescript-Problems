@@ -1,8 +1,11 @@
 export function productOfTwoNum(num1: number, num2: number): number {
-    let n= num1;
-    for (let i = 0; i < num2-1; i++) {
-        n+= num1;
+    let maxLimit = num1 > num2 ? num2 : num1;
+    let product = num1 > num2 ? num1 : num2;
+    let productOfNum = 0;
+
+    for (let i = 0; i < maxLimit; i++) {
+        productOfNum += product;
     }
-    return n;
+    return productOfNum;
 }
-console.log(productOfTwoNum(20, 30));
+console.log(productOfTwoNum(2, 4));
