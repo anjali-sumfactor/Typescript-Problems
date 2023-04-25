@@ -4,7 +4,7 @@ exports.reverseAString = void 0;
 //1.Method:-
 function reverseAString(string) {
     var revStr = "";
-    for (var i = string.length; i >= 0; i--) {
+    for (var i = string.length - 1; i >= 0; i--) {
         revStr += string[i];
     }
     return revStr;
